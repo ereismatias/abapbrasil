@@ -18,7 +18,7 @@
 * 001  12/05/2016  Evandro Matias  Cod. Inicial                      *
 **********************************************************************
 
-REPORT zwa_teste2.
+REPORT zadd_botao_report.
 
 TABLES: sscrfields.
 
