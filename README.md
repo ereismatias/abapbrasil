@@ -1,3 +1,3 @@
-# sap
+SAP
 
-Repositório de consulta pública para tips e projects em SAP.
+Repositório de consulta para tips, snippets e projects em SAP.
