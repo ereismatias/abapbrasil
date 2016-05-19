@@ -66,7 +66,18 @@ FORM f_seleciona_dados.
      AND mvke~vkorg  IN so_vkorg
      AND mvke~vtweg  IN so_vtweg.
 
-  IF sy-subrc NE 0.
+  IF sy-subrc EQ 0.
+    SORT it_material BY marc_werks.
+    IF NOT so_werks[] IS INITIAL.
+      DELETE it_material WHERE NOT marc_werks IN so_werks.
+    ENDIF.
+    SORT it_material BY marc_steuc.
+    IF NOT so_steuc[] IS INITIAL.
+      DELETE it_material WHERE NOT marc_steuc IN so_steuc.
+    ENDIF.
+  ENDIF.
+
+  IF it_material[] IS INITIAL.
     MESSAGE i398(00) WITH text-003.
     LEAVE LIST-PROCESSING.
   ENDIF.
