@@ -1,0 +1,23 @@
+
+Como editar programas ABAP em ambiente de Produção (ou Qualidade)?
+
+Primeiro você precisa de um usuário que tenha permissão para Debug e também editar valores no Debug.
+
+Vamos ao passo a passo:
+
+1. Abra a transação SE38 e exiba o programa LSTRDU34 (ou SE37 FM TRINT_CORR_CHECK).
+2. Coloque um breakpoint na linha "lv_subrc = sy-subrc" (linha 166).
+3. Abra a transação SE38 e exiba o programa LSTRDU44 (ou SE37 FM TRINT_CORR_INSERT).
+4. Coloque um breakpoint na linha "CASE sy-subrc." (linha 165).
+5. Agora abra a transação SE38 com o programa que você deseja editar.
+6. Clique no botão Editar.
+7. Primeiro irá chamar o programa LSTRDU34 e irá para no breakpoint. Você deve mudar o sy-subrc para 0.
+8. Aperte o botão F8.
+9. Agora você pode editar seu código.
+10. Após a edição clique no botão Ativar.
+11. Agora irá chamar o programa os LSTRDU44/LSTRDU34 que irão para no breakpoint. Você deve mudar o sy-subrc para 0.
+12. Aperte o botão F8. 
+13. O passo 11 e 12 pode acontecer mais de uma vez. Lembre-se de deixar o sy-subrc = 0.
+13. Pronto você mudou o seu código.
+
+Você pode acessar também no link: https://steemit.com/tips/@ereismatias/abap-tips-como-editar-programas-abap-em-ambiente-de-producao-ou-qualidade
