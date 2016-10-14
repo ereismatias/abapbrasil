@@ -1,0 +1,17 @@
+Pegar apenas os nº de uma determinada variável
+
+DATA: TEXT    TYPE STRING VALUE '1ABCD2345EFGH',
+      AMOUNT  TYPE STRING,
+      NUM    TYPE I.
+                                                                        
+NUM = STRLEN( TEXT ).
+                                                                        
+DO NUM TIMES.
+  IF TEXT(1) CA '0123456789'.
+    CONCATENATE AMOUNT TEXT(1) INTO AMOUNT.
+    CONDENSE AMOUNT NO-GAPS.
+  ENDIF.
+  SHIFT TEXT LEFT CIRCULAR.
+ENDDO.
+                                                                        
+WRITE AMOUNT.
