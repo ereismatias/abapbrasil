@@ -3,4 +3,7 @@ Vá para a transação SE93, crie uma Transação com parâmetros (transação d
 1-) No campo Transação coloque a transação START_REPORT e os seguintes parâmetros:
 
 D_SREPOVARI-REPORTTYPE = AQ; (Para querys)
-D_SREPOVARI-REPORT = /SAPQUERY/T2G (Sua Query)
+D_SREPOVARI-REPORT = Nome da Query - exemplo: /SAPQUERY/T2G (Sua Query)
+D_SREPOVARI-EXTDREPORT = Nome da query na SQ01.
+
+
