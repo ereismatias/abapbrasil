@@ -1,0 +1,11 @@
+1. Procure os diretórios /usr/sap/*/data & /usr/sap/*/cofiles
+
+2. Faça o upload dos arquivos para os diretórios acima, utilizando a transação CG3Z, sendo:
+   /usr/sap/*/cofiles = arquivos K*
+   /usr/sap/*/data = arquivos R*
+   
+3. Vá para a transação STMS -> Clique duas vezes no ambiente que deseja importar -> Menu Suplementes -> Outras Ordens -> Anexar.
+
+4. Prencha com o nome da Request importada, Mandante destino e importe.
+
+5. Ao importar para a lista, realize o transporte da request para o ambiente de forma manual (clicando no caminhão).
