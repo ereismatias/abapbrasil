@@ -1,0 +1,26 @@
+Para editar dados de tabela em produção temos três maneiras principais:
+
+1-> Ter uma visão da tabela que deseja editar os dados;
+
+2-> Via Debug:
+    - Consulte a tabela via transação SE16;
+    - Selecione os dados que deseja altera (com o check do lado esquerdo) e clique no óculos para exibir;
+    - Na primeira tela de exibição aplique o comando /H na janela do SAP Gui, aperter ENTER, dê um F7;
+    - Irá para o trecho do código que possui a variável "CODE", altere ela para EDIT (maiúsculo);
+    - Pronto você poderá alterar os dados;
+    - Na variável "CODE" temos ainda os códigos INSR - Inserção e DELE - Exclusão
+    
+3-> Via SE16N_INTERFACE
+    - Acesse a transação SE37;
+    - Coloque o nome da função SE16N_INTERFACE e execute;
+    - Nos campos:
+      I_TAB = Nome da tabela que deseja editar.
+      I_EDIT = Deixe com X.
+      I_SAPEDIT = Deixe com X.
+    - Na tabela IT_SELFIELDS, os campos funciona como seleção da tabela, sendo os campos desta tabela: 
+      FIELD = Nome do campo para seleção da tabela, exemplo BUKRS
+      SIGN = Sinal (como um range) = I
+      OPTION = Opção (como um range) = EQ / NE / BT
+      LOW = Valor Inicial (como range)
+      HIGH = Valor Final (como range)
+    
