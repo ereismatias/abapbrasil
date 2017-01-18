@@ -1,0 +1,7 @@
+Funções úteis para cálculo de datas.
+
+FIMA_DAYS_AND_MONTHS_AND_YEARS
+-> Função utilizada para contar dias, meses, anos entre duas datas.
+
+CALCULATE_DATE
+-> Função utilizada para encontrar uma data, a partir de uma data inicial acrescentando dias ou meses.
