@@ -1,0 +1,8 @@
+Para adicionar novos campos na transação Standard FBL*N, faça os passos abaixo:
+
+1-) Faça um append nas estruturas RFPOS e RFPOSX (ou utilize algum append Z já criado);
+2-) Rode o programa RFPOSXEXTEND que extende o append criado para a estrutura RFPOSXEXT;
+3-) Rode o programa BALVBUFDEL para excluir o Buffer;
+4-) Ative a BTE 00001650 criando uma função copiando SAMPLE_INTERFACE_00001650 para qualquer nome (ex. ZFI_INTERFACE_00001650);
+5-) Use a transação FIBF para ativar a BTE e a transação SE37 para criar a função;
+6-) Coloque o seu código nessa função criada.
