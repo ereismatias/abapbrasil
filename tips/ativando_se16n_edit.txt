@@ -1,0 +1,10 @@
+Ativando &SAP_EDIT na transação SE16N (Mjölnir)
+
+O código &SAP_EDIT utilizado na SE16N habilita mudanças direto na tabela, porém muitas vezes esse código está desabilitado (olha a SAP Note 1420281).
+Porém através de debug você pode habilitar temporariamente para realizar alguns "ajustes" dos registros, para isso siga os passos abaixo:
+
+1.) Acesse a transação SE16N normalmente.
+2.) Digite &SAP_EDIT na caixa de comando do SAP, aperte ENTER, digite /H, aperter ENTER, você está no Debug.
+3.) Aperte a tecla F7 até chegar no programa SAPLSE16N.
+4.) Mude para "X" as duas variáveis GD-EDIT e GD-SAPEDIT, aperter ENTER.
+5.) Aperte F8 e seja feliz.
