@@ -1,0 +1,5 @@
+CONVERSION_EXIT_ALPHA_INPUT
+-> Insere zeros a esquerda
+
+CONVERSION_EXIT_ALPHA_OUTPUT 
+-> remove zeros a esquerda
