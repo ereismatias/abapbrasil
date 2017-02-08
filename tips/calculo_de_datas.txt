@@ -8,3 +8,6 @@ CALCULATE_DATE
 
 RP_LAST_DAY_OF_MONTHS
 -> Busca o último dia do mês
+
+RE_ADD_MONTH_TO_DATE
+-> Adiciona X meses em uma determinada data.
