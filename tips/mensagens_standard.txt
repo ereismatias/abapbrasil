@@ -1,0 +1,11 @@
+Use as mensagens de classes de mensagens standards.
+
+Vá até a transação SE91, procure pelas classes:
+
+FI / SD / MM / PP / PS / CO (etc)
+
+Todas as classes possuem um texto dessa forma: & & & &
+
+Cada & representa uma mensagem que pode ser passada, por exemplo: 
+
+MESSAGE e899(fi) WITH 'TESTE1' 'TESTE2' 'TESTE3' 'TESTE4'.
