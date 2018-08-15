@@ -1,0 +1,19 @@
+FUNCTION zagfe_timer.
+*"----------------------------------------------------------------------
+*"*"Interface local:
+*"----------------------------------------------------------------------
+
+  DATA: ztime LIKE sy-uzeit.
+
+  GET TIME.
+
+  ztime = sy-uzeit + 1.
+
+  DO.
+    GET TIME.
+    IF sy-uzeit >= ztime.
+      EXIT.
+    ENDIF.
+  ENDDO.
+
+ENDFUNCTION.
