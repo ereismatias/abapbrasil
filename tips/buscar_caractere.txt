@@ -1,0 +1,5 @@
+Utilize o programa
+
+RS_ABAP_SOURCE_SCAN
+
+PS: Jogar em background
