@@ -8,7 +8,7 @@
 **********************************************************************
 * PROGRAMADOR         : Evandro Reis Matias                          *
 * SITE                : www.workingSAP.com                           *
-* DATA                : 29/07/2016                                   *
+* DATA                : 12/09/2018                                   *
 *--------------------------------------------------------------------*
 * OBJETIVOS                                                          *
 * Busca a localização exata de um determinado caractere em uma string*
