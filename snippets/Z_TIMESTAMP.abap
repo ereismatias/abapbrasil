@@ -1,0 +1,21 @@
+
+REPORT Z_TIMESTAMP.
+
+DATA: v_ts  TYPE timestampl,
+      v_tss TYPE string.
+
+GET TIME STAMP FIELD v_ts.
+
+WRITE v_ts.
+
+v_tss = v_ts.
+REPLACE ALL OCCURRENCES OF '.' IN v_tss WITH ''.
+REPLACE ALL OCCURRENCES OF ',' IN v_tss WITH ''.
+
+WRITE: / , v_tss.
+
+* RESULTADO ESPERADO
+*
+* 20,180,914,140,712.5256830
+*
+* 201809141407125256830 (AAAAMMDDhhmmss, mmmuuun)
