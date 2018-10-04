@@ -1,0 +1,23 @@
+Existe um ABISMO enorme, entre o que o usuário quer, o que o funcional desenha e o que o desenvolvedor codifica.
+
+Mais ou menos isso:
+
+
+_________U_F__
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+---------------------------D-------------------
+
+U = Usuário
+F = Funcional
+D = Desenvolvedor
+
+Moral da história, geralmente o desenvolvedor só espera os dois se jogarem do abismo para chegar próximo do que é certo, detalhe, o desenvolvedor já estava lá.
